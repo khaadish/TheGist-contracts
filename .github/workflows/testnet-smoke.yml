@@ -30,7 +30,7 @@ jobs:
       - name: Install stellar-cli
         run: |
           sudo apt-get update
-          sudo apt-get install -y libdbus-1-dev pkg-config
+          sudo apt-get install -y pkg-config libdbus-1-dev libudev-dev libusb-1-0-dev
           cargo install --locked stellar-cli
 
       - name: Write .env.contracts from secrets
